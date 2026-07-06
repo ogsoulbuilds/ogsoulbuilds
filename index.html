@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OGSoul Builds — Build a website you actually own</title>
-  <meta name="description" content="For coaches, founders, and makers who are done renting. Build a website you actually own — your code, portable, about $40/mo all-in. No platform landlord." />
+  <meta name="description" content="A $129 one-time course for coaches, founders, and makers who are done renting. Learn to build a real website with Claude, GitHub, and Vercel — your code, portable, about $40/mo to run it after." />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/Images/favicon_OGSOULBUILDS.png" />
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="OGSoul Builds" />
   <meta property="og:url" content="https://www.ogsoulbuilds.ca/" />
   <meta property="og:title" content="OGSoul Builds" />
-  <meta property="og:description" content="For coaches, founders, and makers who are done renting. Build a website you actually own — your code, portable, about $40/mo all-in. No platform landlord." />
+  <meta property="og:description" content="A $129 one-time course for coaches, founders, and makers who are done renting. Learn to build a real website with Claude, GitHub, and Vercel — your code, portable, about $40/mo to run it after." />
   <meta property="og:image" content="https://www.ogsoulbuilds.ca/Images/social-share_OGSOULBUILDS.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -24,7 +24,7 @@
   <!-- Social preview (Twitter/X card) -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="OGSoul Builds" />
-  <meta name="twitter:description" content="For coaches, founders, and makers who are done renting. Build a website you actually own — your code, portable, about $40/mo all-in. No platform landlord." />
+  <meta name="twitter:description" content="A $129 one-time course for coaches, founders, and makers who are done renting. Learn to build a real website with Claude, GitHub, and Vercel — your code, portable, about $40/mo to run it after." />
   <meta name="twitter:image" content="https://www.ogsoulbuilds.ca/Images/social-share_OGSOULBUILDS.png" />
   <meta name="twitter:image:alt" content="OGSoul Builds — build a website you actually own." />
 
@@ -204,7 +204,15 @@
       max-width: 46ch;
       font-size: clamp(18px, 2.4vw, 21px);
       color: #C7CEDC;
-      margin: 24px 0 40px;
+      margin: 24px 0 28px;
+    }
+    .hero p.price-line {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: -0.01em;
+      color: var(--mint);
+      margin: 0 0 32px;
     }
 
     /* ---------- CONTRAST ---------- */
@@ -344,6 +352,38 @@
     .step h3 { font-size: 21px; font-weight: 700; margin-bottom: 10px; }
     .step p { margin: 0; color: var(--slate); font-size: 16px; }
 
+    /* ---------- WHAT'S INSIDE ---------- */
+    .inside-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-width: 720px;
+    }
+    .inside-list li {
+      display: flex;
+      gap: 14px;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+    .inside-list li:first-child { border-top: none; }
+    .inside-list .mark { flex: none; font-weight: 700; width: 18px; color: var(--mint); }
+
+    /* ---------- TEACHER ---------- */
+    .teacher { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .teacher .lead {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 500;
+      font-size: clamp(22px, 3vw, 30px);
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      max-width: 26ch;
+      margin: 0 0 28px;
+    }
+    .teacher p { color: var(--slate); max-width: 60ch; margin: 0 0 16px; }
+    .teacher .fine { color: var(--ink); font-weight: 500; }
+
     /* ---------- WHO ---------- */
     .who { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .who .lead {
@@ -368,6 +408,21 @@
       max-width: 20ch;
       margin: 0 auto 32px;
       font-size: clamp(30px, 5vw, 50px);
+    }
+    .final .price-line {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--mint);
+      font-size: 18px;
+      margin: 0 0 28px;
+    }
+    .final .guarantee {
+      max-width: 46ch;
+      margin: 24px auto 0;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #8C99B2;
     }
 
     /* ---------- FOOTER ---------- */
@@ -443,7 +498,7 @@
         <a href="#who">Who It's For</a>
       </nav>
 
-      <a class="btn nav-cta" href="https://sendfox.com/lp/1g2oqj" target="_blank" rel="noopener">Join the waitlist</a>
+      <a class="btn nav-cta" href="https://shop.ogsoul.ca/the-website-course/" target="_blank" rel="noopener">Enrol now</a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
@@ -456,7 +511,8 @@
     <div class="wrap">
       <h1>Stop renting your website. Build one you own.</h1>
       <p>Most platforms rent you a spot and keep the keys. Own your code outright, move it anywhere, and pay about $40 a month instead of a subscription that never ends.</p>
-      <a class="btn btn-lg" href="https://sendfox.com/lp/1g2oqj" target="_blank" rel="noopener">Join the waitlist</a>
+      <p class="price-line">$129 once for the course. Yours forever.</p>
+      <a class="btn btn-lg" href="https://shop.ogsoul.ca/the-website-course/" target="_blank" rel="noopener">Enrol now</a>
     </div>
   </section>
 
@@ -554,6 +610,29 @@
     </div>
   </section>
 
+  <!-- WHAT'S INSIDE -->
+  <section id="inside">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What's Inside</p>
+        <h2>By the end, you'll have a real site live.</h2>
+        <p>Not a checklist of modules — a straight line from zero to a published site with your name on it.</p>
+      </div>
+
+      <ul class="inside-list">
+        <li><span class="mark">&check;</span> Open your Claude, GitHub, and Vercel accounts and get them talking to each other — the whole stack, set up once.</li>
+        <li><span class="mark">&check;</span> Publish your very first live page, so "it's live" stops being the scary part.</li>
+        <li><span class="mark">&check;</span> Get your brand and your words ready before you touch a single line of code.</li>
+        <li><span class="mark">&check;</span> Build your real one-page site — the actual sections you need, not a template you're borrowing.</li>
+        <li><span class="mark">&check;</span> Connect your own custom domain, so it's your address, not theirs.</li>
+        <li><span class="mark">&check;</span> Add a custom thank-you page for the moments after someone signs up or reaches out.</li>
+        <li><span class="mark">&check;</span> Give Claude a permanent memory of your site, so it stays on-brand every time you come back to edit it.</li>
+        <li><span class="mark">&check;</span> Tighten up your SEO so people can actually find the thing you just built.</li>
+        <li><span class="mark">&check;</span> Turn on analytics, so you know who's showing up instead of guessing.</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- WHO IT'S FOR -->
   <section class="who" id="who">
     <div class="wrap">
@@ -565,11 +644,25 @@
     </div>
   </section>
 
+  <!-- WHO'S TEACHING THIS -->
+  <section class="teacher" id="teacher">
+    <div class="wrap">
+      <p class="eyebrow">Who's Teaching This</p>
+      <h2 class="lead">Darrel-Lynne (Dee) Thieson, founder of OGSoul.</h2>
+      <p>Dee hosts the Chatting with Humans podcast and her writing has appeared in two published anthologies. After nearly twenty years in operations and executive support, she went independent in 2024 and has been building businesses and systems on her own terms ever since.</p>
+      <p class="fine">She's not a developer.</p>
+      <p>When she rebuilt her own website with Claude, GitHub, and Vercel, she wasn't writing code from scratch — she was doing exactly what this course teaches. She came out the other side owning her site outright, with no monthly platform bill and no one to call for every small change.</p>
+      <p>Build One You Own is her way of handing that same independence to the people she works with best: coaches, founders, and makers who are done renting their place online. She teaches in plain language, in a calm, easy-to-follow, step-by-step process.</p>
+    </div>
+  </section>
+
   <!-- FINAL CTA -->
   <section class="final">
     <div class="wrap">
       <h2>Build a website you own. Pay once a month, not forever.</h2>
-      <a class="btn btn-lg" href="https://sendfox.com/lp/1g2oqj" target="_blank" rel="noopener">Join the waitlist</a>
+      <p class="price-line">$129 once for the course. About $40/mo after, only for the stack you choose to keep running it on.</p>
+      <a class="btn btn-lg" href="https://shop.ogsoul.ca/the-website-course/" target="_blank" rel="noopener">Enrol now</a>
+      <p class="guarantee">30-day guarantee: complete the course within 30 days of purchase, and if you're unable to publish a live one-page website with 4 sections, we'll refund you.</p>
     </div>
   </section>
 
